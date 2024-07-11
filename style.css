@@ -1,0 +1,10 @@
+.v_line{
+     position: absolute;
+     top: 162%;
+     bottom: 0;
+     height: 1120px;
+     width: 1px;
+     background-color: black;
+     left: 50%; 
+     margin-left: -1px; 
+}
