@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" id="htmlTag">
 
 <head>
      <meta charset="UTF-8">
@@ -11,23 +11,28 @@
      <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-[#f5f5f5]">
+<body class="bg-white dark:bg-gray-900">
      <!--Navber & Hero Section-->
      <div class="container mx-auto bg-[url('/images/banner.png')] bg-no-repeat bg-cover h-[800px] relative">
-          <header class="container mx-auto mt-5 bg-white h-[100px] shadow-lg">
+          <header class="container mx-auto mt-5 bg-white dark:bg-[#2D3142] h-[100px] shadow-lg">
                <nav class="flex flex-row justify-between pt-5">
                     <img class="ml-5" src="images/logo.png" alt="">
                     <div>
-                         <ul class="flex flex-row justify-center font-medium">
+                         <ul class="flex flex-row justify-center font-medium dark:text-white">
                               <li class="mx-3">Home</li>
                               <li class="mx-3 text-red-500">About Us</li>
                               <li class="mx-3">Upskill</li>
                               <li class="mx-3">Contact us </li>
                          </ul>
                     </div>
-                    <button
-                         class="bg-red-600 py-2 px-5 rounded-lg text-white font-bold hover:bg-red-900 hover:scale-105 transition-all duration-300 mr-5">Register
-                         Interest</button>
+                    <div>
+                         <button
+                              class="bg-red-600 py-2 px-5 rounded-lg text-white font-bold hover:bg-red-900 hover:scale-105 transition-all duration-300 mr-5">Register
+                              Interest</button>
+                         <i id="switch"
+                              class="far fa-moon w-12 h-12 hover:text-red-900 hover:scale-105 transition-all duration-300"></i>
+
+                    </div>
                </nav>
 
           </header>
@@ -63,12 +68,12 @@
           <section class="mt-32">
                <div class="mx-auto flex flex-col md:flex-row lg:grid-rows-4 gap-8 px-24">
                     <div
-                         class="font-bold text-3xl h-[279px] shadow-xl rounded-xl flex items-center hover:scale-105 transition-all duretion-300 h-[279.05px] w-[1203px]">
+                         class="font-bold text-3xl h-[279px] shadow-xl rounded-xl flex items-center hover:scale-105 transition-all duretion-300 h-[279.05px] w-[1203px] dark:bg-[#2D3142]">
                          <div class="flex flex-col pl-5">
-                              <p>At
+                              <p class="dark:text-white">At
                                    <span class="text-red-600">C4U</span>,
                               </p>
-                              <p>We Empower:</p>
+                              <p class="dark:text-white">We Empower:</p>
                          </div>
 
                     </div>
@@ -112,9 +117,10 @@
                     <div class="flex flex-col justify-center items-center gap-20 md:flex-row lg:flex-row">
                          <div class="w-1/2">
                               <div class="flex flex-col justify-center p-20">
-                                   <p class="text-red-500 mt-7">About us</p>
-                                   <h3 class="text-3xl font-semibold">Our Mission </h3>
-                                   <p class="text-[20px]">To create a personalised pathway for continuous<br> learning
+                                   <p class="text-red-500 mt-7 dark:text-red-500">About us</p>
+                                   <h3 class="text-3xl font-semibold dark:text-white">Our Mission </h3>
+                                   <p class="text-[20px] dark:text-white">To create a personalised pathway for
+                                        continuous<br> learning
                                         and
                                         transferrable skills
                                         development.</p>
@@ -156,8 +162,8 @@
                               <div></div>
                          </div>
                          <div class="w-1/2">
-                              <div class="flex flex-col justify-center p-20">
-                                   <p class="text-red-500 mt-7">About us</p>
+                              <div class="flex flex-col justify-center p-20 dark:text-white">
+                                   <p class="text-red-500 mt-7 ">About us</p>
                                    <h3 class="text-3xl font-semibold">Our Vision </h3>
                                    <p class="text-[20px]">To have a globally recognised strategic bridge between
                                         education and the job market.</p>
@@ -179,13 +185,13 @@
 
           <!--Discover Section-->
           <section class="mt-16">
-               <div class="w-[1440px] bg-white shadow-md p-40">
+               <div class="w-[1440px] bg-white dark:bg-[#2D3142] shadow-md p-40 dark:text-white">
                     <div class="flex flex-col grid-rows-3 justify-center items-center pb-8">
                          <div></div>
                          <div class="w-5 h-5 rounded-full bg-[#00FF84] ml-[9%] z-10 relative"></div>
                          <div></div>
                     </div>
-                    <div class="flex flex-col md:flex-row grid-rows-3  gap-12">
+                    <div class="flex flex-col md:flex-row grid-rows-3  gap-12 ">
                          <div class="p-4 hover:scale-105 transition-all duretion-300 border rounded-xl py-10">
                               <img class="absolute ml-40 mt-10" src="images/1.png" alt="">
                               <img class="bg-white p-3 rounded-full mt-7" src="images/Group 199.png" alt="">
@@ -225,7 +231,7 @@
 
 
           <!--The Creative Team Section-->
-          <section class="mt-16 mb-16 bg-[url('/images/back-creative.png')] bg-no-repeat bg-cover">
+          <section class="mt-16 mb-16 bg-[url('/images/back-creative.png')] bg-no-repeat bg-cover dark:text-white">
                <div class="">
                     <div class="flex flex-row items-center">
                          <h1 class="text-5xl font-bold pt-20 px-10 pb-20">The Creative Team<br> behind <span
@@ -278,7 +284,7 @@
 
 
           <!--Footer Section-->
-          <section class="mt-24">
+          <section class="mt-24 dark:text-white">
                <div>
                     <div class="mx-auto grid grid-cols md:grid-cols-6 gap-8">
                          <div class="col-span-2">
@@ -329,7 +335,15 @@
 
      </main>
      <hr class="border-b mb-5 mt-5">
-     <p class="text-center mb-5 font-bold">Copyright 2022 Creatives For You LTD</p>
+     <p class="text-center mb-5 font-bold dark:text-white">Copyright 2022 Creatives For You LTD</p>
+
+
+     <script>
+          const htmlTag = document.getElementById('htmlTag');
+          document.getElementById('switch').addEventListener('click', function () {
+               htmlTag.classList.toggle('dark');
+          })
+     </script>
 
 </body>
 
